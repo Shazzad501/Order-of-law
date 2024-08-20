@@ -25,6 +25,11 @@
     *{
       font-family: "Lobster", sans-serif;
     }
+    .background{
+      background: url(images/banner.png),linear-gradient(180.00deg, rgb(17, 17, 17),rgba(17, 17, 17, 0) 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
    </style>
   <!-- Internal css link tag close -->
 
@@ -45,82 +50,97 @@
 <body>
   <!-- Header section start -->
    <header class="md:container mx-auto">
-    <nav class="px-5 md:px-0">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class=" mr-4 lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+      <!-- Navbar section start -->
+      <nav class="">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class=" mr-4 lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a class="text-lg font-bold">Home</a></li>
+                <li><a class="text-lg font-bold">Services</a></li>
+                <li><a class="text-lg font-bold">Cases</a></li>
+                <li><a class="text-lg font-bold">Blog</a></li>
+                <li><a class="text-lg font-bold">Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a class="text-lg font-bold">Home</a></li>
-              <li><a class="text-lg font-bold">Services</a></li>
-              <li><a class="text-lg font-bold">Cases</a></li>
-              <li><a class="text-lg font-bold">Blog</a></li>
-              <li><a class="text-lg font-bold">Contact</a></li>
+            <img src="images/logo2.png" alt="">
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-bold">
+              <li><a>Home</a></li>
+              <li>
+                <details>
+                  <summary>Services</summary>
+                  <ul class="p-2">
+                    <li><a>Service1</a></li>
+                    <li><a>Service2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Cases</summary>
+                  <ul class="p-2">
+                    <li><a>Cases1</a></li>
+                    <li><a>Cases2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Blog</summary>
+                  <ul class="p-2">
+                    <li><a>Blog1</a></li>
+                    <li><a>Blog2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Contact</summary>
+                  <ul class="p-2">
+                    <li><a>Number1</a></li>
+                    <li><a>Number2</a></li>
+                  </ul>
+                </details>
+              </li>
             </ul>
           </div>
-          <img src="images/logo2.png" alt="">
+          <div class="navbar-end">
+            <a class="btn bg-[#B68C5A] text-gray-100 text-lg hover:text-black">Free Consultation</a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-lg font-bold">
-            <li><a>Home</a></li>
-            <li>
-              <details>
-                <summary>Services</summary>
-                <ul class="p-2">
-                  <li><a>Service1</a></li>
-                  <li><a>Service2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Cases</summary>
-                <ul class="p-2">
-                  <li><a>Cases1</a></li>
-                  <li><a>Cases2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Blog</summary>
-                <ul class="p-2">
-                  <li><a>Blog1</a></li>
-                  <li><a>Blog2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Contact</summary>
-                <ul class="p-2">
-                  <li><a>Number1</a></li>
-                  <li><a>Number2</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <a class="btn bg-[#B68C5A] text-gray-100 text-lg hover:text-black">Free Consultation</a>
-        </div>
-      </div>
-    </nav>
+      </nav>
+      <!-- Navbar section close -->
+
+      <!-- banner section start -->
+        <section class="background py-[100px] rounded-md flex items-center justify-center">
+          <div class="flex flex-col items-center justify-center text-center">
+              <h1 class="text-white text-[4rem] leading-[70px] mb-5">We Provide Effective <br class="hidden md:block"> Legal Solutions</h1>
+              <p class="text-xl text-white mb-8">There are many variations of passages of Lorem Ipsum available, but the majority <br class="hidden md:block"> have suffered alteration in some form, by injected humour.</p>
+              <div>
+                <input class="px-3 py-[11px] mr-3 rounded-md text-black" type="search" name="search" id="search" placeholder="Search your service:">
+              <button class="btn bg-[#B68C5A] border-none rounded-md px-5 text-xl font-bold text-gray-300 hover:text-black">Search</button>
+              </div>
+          </div>
+        </section>
+      <!-- banner section close -->
    </header>
   <!-- Header section close -->
 
